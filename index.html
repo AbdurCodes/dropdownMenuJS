@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu</title>
+    <script src="script.js" defer></script>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            border: 1px solid red;
+            background-color: aquamarine;
+            position: relative;
+        }
+
+        li {
+            list-style: none;
+            background-color: rgb(212, 212, 224);
+            padding: 12px;
+        }
+
+        .mainMenu {
+            display: flex;
+            gap: 12px;
+            justify-content: space-around;
+        }
+
+        .subMenuPlanets,
+        .subMenuAnimals,
+        .subMenuMedicines,
+        .subMenuScientists,
+        .subMenuColors,
+        .subMenuTechStacks {
+            display: none;
+            position: absolute;
+
+            & li {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                background-color: rgb(255, 153, 127);
+            }
+        }
+
+        .subMenuPlanets {
+            left: 170px;
+            top: 40px;
+        }
+
+        .subMenuAnimals {
+            left: 480px;
+            top: 40px;
+        }
+
+        .subMenuMedicines {
+            left: 790px;
+            top: 40px;
+        }
+
+        .subMenuScientists {
+            left: 1100px;
+            top: 40px;
+        }
+
+        .subMenuColors {
+            left: 1410px;
+            top: 40px;
+        }
+
+        .subMenuTechStacks {
+            left: 1720px;
+            top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Dropdown Menu</h1>
+    <header>
+        <nav>
+            <ul class="mainMenu">
+                <li><a href="" id="planetsBtn">Planets</a></li>
+                <li><a href="" id="animalsBtn">Animals</a></li>
+                <li><a href="" id="medsBtn">Medicines</a></li>
+                <li><a href="" id="scientistsBtn">Scientists</a></li>
+                <li><a href="" id="colorsBtn">Colors</a></li>
+                <li><a href="" id="techStackBtn">Tech Stacks</a></li>
+            </ul>
+
+            <ul class="subMenuPlanets">
+                <li><a href="">Mercury</a></li>
+                <li><a href="">Venus</a></li>
+                <li><a href="">Earth</a></li>
+                <li><a href="">Mars</a></li>
+                <li><a href="">Jupiter</a></li>
+                <li><a href="">Saturn</a></li>
+                <li><a href="">Neptune</a></li>
+                <li><a href="">Uranus</a></li>
+            </ul>
+
+            <ul class="subMenuAnimals">
+                <li><a href="">Dog</a></li>
+                <li><a href="">Cat</a></li>
+                <li><a href="">Hyena</a></li>
+                <li><a href="">Snake</a></li>
+                <li><a href="">Crocodile</a></li>
+                <li><a href="">Lion</a></li>
+                <li><a href="">Tiger</a></li>
+                <li><a href="">Markhor</a></li>
+            </ul>
+
+            <ul class="subMenuMedicines">
+                <li><a href="">Panadol</a></li>
+                <li><a href="">Disprin</a></li>
+                <li><a href="">Brufen</a></li>
+                <li><a href="">Cipralex</a></li>
+                <li><a href="">Xanax</a></li>
+                <li><a href="">Ativan</a></li>
+                <li><a href="">Valium</a></li>
+                <li><a href="">Zoloft</a></li>
+            </ul>
+
+            <ul class="subMenuScientists">
+                <li><a href="">Newton</a></li>
+                <li><a href="">Einstein</a></li>
+                <li><a href="">Tesla</a></li>
+                <li><a href="">Edison</a></li>
+                <li><a href="">Darwin</a></li>
+                <li><a href="">Galileo</a></li>
+                <li><a href="">Hawking</a></li>
+                <li><a href="">Curie</a></li>
+            </ul>
+
+            <ul class="subMenuColors">
+                <li><a href="">Red</a></li>
+                <li><a href="">Green</a></li>
+                <li><a href="">Blue</a></li>
+                <li><a href="">Yellow</a></li>
+                <li><a href="">Black</a></li>
+                <li><a href="">White</a></li>
+                <li><a href="">Pink</a></li>
+                <li><a href="">Purple</a></li>
+            </ul>
+
+            <ul class="subMenuTechStacks">
+                <li><a href="">MERN</a></li>
+                <li><a href="">MEAN</a></li>
+                <li><a href="">MEVN</a></li>
+                <li><a href="">LAMP</a></li>
+                <li><a href="">WAMP</a></li>
+                <li><a href="">WISA</a></li>
+                <li><a href="">JAM</a></li>
+                <li><a href="">JAMStack</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+</body>
+
+</html>
