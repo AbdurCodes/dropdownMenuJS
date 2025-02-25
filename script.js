@@ -1,91 +1,39 @@
-const subMenuPlanets = document.querySelector('.subMenuPlanets');
-const planetsBtn = document.getElementById('planetsBtn');
+function createSubMenuDynamic(mainMenu, button, items) {
+    const subMenuDynamic = document.createElement('ul');
+    subMenuDynamic.classList.add('subMenuDynamic, subMenuDynamicHide');
+    items.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        subMenuDynamic.appendChild(li);
+    });
 
-const subMenuAnimals = document.querySelector('.subMenuAnimals');
-const animalsBtn = document.getElementById('animalsBtn');
+    const subMenubutton = document.createElement('a');
+    subMenubutton.textContent = button;
+    subMenubutton.href = '#';
+    mainMenu.appendChild(subMenubutton);
 
-const subMenuMedicines = document.querySelector('.subMenuMedicines');
-const medsBtn = document.getElementById('medsBtn');
-
-const subMenuScientists = document.querySelector('.subMenuScientists');
-const scientistsBtn = document.getElementById('scientistsBtn');
-
-const subMenuColors = document.querySelector('.subMenuColors');
-const colorsBtn = document.getElementById('colorsBtn');
-
-const subMenuTechStack = document.querySelector('.subMenuTechStacks');
-const techStackBtn = document.getElementById('techStackBtn');
-
-
-
-
-function displaySubmenu (submenu, button) {
-    button.addEventListener('click', (e) => {
-        submenu.style.display = 'block';
+    subMenubutton.addEventListener('mouseenter', (e) => {
+        subMenuDynamic.classList.remove('subMenuDynamicHide');
+        subMenubutton.appendChild(subMenuDynamic);
         e.preventDefault();
-    })
+    });
 }
 
-// what is the purpose of the preventDefault method in the code above?
-// The preventDefault method is used to prevent the default behavior of an event from occurring. In this case, it is used to prevent the default behavior of the click event on the button, which would normally cause the page to scroll to the top when the button is clicked. By calling preventDefault, we are preventing this default behavior and only displaying the submenu without any additional side effects.
 
-// what is e in the code above?
-// e is the event object that is passed to the event listener function. It contains information about the event that occurred, such as the target element that triggered the event, the type of event, and other properties related to the event. In this case, e is used to prevent the default behavior of the click event on the button by calling e.preventDefault().
-
-
-displaySubmenu(subMenuPlanets, planetsBtn);
-displaySubmenu(subMenuAnimals, animalsBtn);
-displaySubmenu(subMenuMedicines, medsBtn);
-displaySubmenu(subMenuScientists, scientistsBtn);
-displaySubmenu(subMenuColors, colorsBtn);
-displaySubmenu(subMenuTechStack, techStackBtn);
+// on mouseenter subMenuDynamic should become visible while on mouseleave it should become hidden
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-The concept of "event delegation" in JavaScript. What it is and how it can be used in practice?
-
-Event delegation is a technique in which we attach a single event listener to a parent element that will fire for all children matching a selector, whether those children exist now or are added in the future. It allows us to avoid adding event listeners to specific nodes; instead, the event listener is added to one parent. This is particularly useful when we have a large number of child elements that we want to attach the same event listener to. 
-
-Example of event delegation in practice:
-
-// HTML
-<div id="parent">
-    <button>Button 1</button>
-    <button>Button 2</button>
-    <button>Button 3</button>
-</div>
-
-// JavaScript
-const parent = document.getElementById('parent');
-parent.addEventListener('click', (event) => {
-    if (event.target.tagName === 'BUTTON') {
-        console.log(event.target.textContent);
-    }
-}
-
-In this example, we attach a single event listener to the parent element. When a button is clicked, the event bubbles up to the parent element, and we can check if the target element is a button. If it is, we can access the text content of the button that was clicked. This way, we only need one event listener for all the buttons, instead of adding individual event listeners to each button.
-
-```
-
+const mainMenu = document.querySelector('.mainMenu');
+const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+const animals = ['Lion', 'Tiger', 'Elephant', 'Giraffe', 'Zebra', 'Hippo', 'Rhino', 'Leopard'];
+const medicines = ['Paracetamol', 'Aspirin', 'Ibuprofen', 'Amoxicillin', 'Ciprofloxacin', 'Metronidazole', 'Doxycycline', 'Azithromycin'];
+const scientists = ['Albert Einstein', 'Isaac Newton', 'Marie Curie', 'Galileo Galilei', 'Charles Darwin', 'Nikola Tesla', 'Stephen Hawking', 'Ada Lovelace'];
+const colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet', 'Purple'];
+const techStacks = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Python'];
+createSubMenuDynamic(mainMenu, "Animals", animals);
+createSubMenuDynamic(mainMenu, "Planets", planets);
+createSubMenuDynamic(mainMenu, "Medicines", medicines);
+createSubMenuDynamic(mainMenu, "Scientists", scientists);
+createSubMenuDynamic(mainMenu, "Colors", colors);
+createSubMenuDynamic(mainMenu, "Tech Stacks", techStacks);
