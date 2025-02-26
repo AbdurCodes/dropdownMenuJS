@@ -14,13 +14,14 @@
         nav {
             border: 1px solid red;
             background-color: aquamarine;
-            position: relative;
+            /* position: relative; */
         }
 
         li {
             list-style: none;
-            background-color: rgb(212, 212, 224);
+            background-color: rgb(120, 120, 221);
             padding: 12px;
+            color: aliceblue;
         }
 
         .mainMenu {
@@ -29,51 +30,21 @@
             justify-content: space-around;
         }
 
-        .subMenuPlanets,
-        .subMenuAnimals,
-        .subMenuMedicines,
-        .subMenuScientists,
-        .subMenuColors,
-        .subMenuTechStacks {
-            display: none;
+        .subMenuDynamic {
             position: absolute;
-
+            /* background-color: rgb(255, 153, 127); */
             & li {
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-                background-color: rgb(255, 153, 127);
+                width: fit-content;
+                border: 1px solid black;
+                align-items: center;
             }
         }
 
-        .subMenuPlanets {
-            left: 170px;
-            top: 40px;
+        .subMenuDynamicHide {
+            /* display: none; */
+            visibility: hidden;
         }
 
-        .subMenuAnimals {
-            left: 480px;
-            top: 40px;
-        }
-
-        .subMenuMedicines {
-            left: 790px;
-            top: 40px;
-        }
-
-        .subMenuScientists {
-            left: 1100px;
-            top: 40px;
-        }
-
-        .subMenuColors {
-            left: 1410px;
-            top: 40px;
-        }
-
-        .subMenuTechStacks {
-            left: 1720px;
-            top: 40px;
-        }
 
     </style>
 </head>
@@ -83,83 +54,11 @@
     <header>
         <nav>
             <ul class="mainMenu">
-                <li><a href="" id="planetsBtn">Planets</a></li>
-                <li><a href="" id="animalsBtn">Animals</a></li>
-                <li><a href="" id="medsBtn">Medicines</a></li>
-                <li><a href="" id="scientistsBtn">Scientists</a></li>
-                <li><a href="" id="colorsBtn">Colors</a></li>
-                <li><a href="" id="techStackBtn">Tech Stacks</a></li>
             </ul>
-
-            <ul class="subMenuPlanets">
-                <li><a href="">Mercury</a></li>
-                <li><a href="">Venus</a></li>
-                <li><a href="">Earth</a></li>
-                <li><a href="">Mars</a></li>
-                <li><a href="">Jupiter</a></li>
-                <li><a href="">Saturn</a></li>
-                <li><a href="">Neptune</a></li>
-                <li><a href="">Uranus</a></li>
-            </ul>
-
-            <ul class="subMenuAnimals">
-                <li><a href="">Dog</a></li>
-                <li><a href="">Cat</a></li>
-                <li><a href="">Hyena</a></li>
-                <li><a href="">Snake</a></li>
-                <li><a href="">Crocodile</a></li>
-                <li><a href="">Lion</a></li>
-                <li><a href="">Tiger</a></li>
-                <li><a href="">Markhor</a></li>
-            </ul>
-
-            <ul class="subMenuMedicines">
-                <li><a href="">Panadol</a></li>
-                <li><a href="">Disprin</a></li>
-                <li><a href="">Brufen</a></li>
-                <li><a href="">Cipralex</a></li>
-                <li><a href="">Xanax</a></li>
-                <li><a href="">Ativan</a></li>
-                <li><a href="">Valium</a></li>
-                <li><a href="">Zoloft</a></li>
-            </ul>
-
-            <ul class="subMenuScientists">
-                <li><a href="">Newton</a></li>
-                <li><a href="">Einstein</a></li>
-                <li><a href="">Tesla</a></li>
-                <li><a href="">Edison</a></li>
-                <li><a href="">Darwin</a></li>
-                <li><a href="">Galileo</a></li>
-                <li><a href="">Hawking</a></li>
-                <li><a href="">Curie</a></li>
-            </ul>
-
-            <ul class="subMenuColors">
-                <li><a href="">Red</a></li>
-                <li><a href="">Green</a></li>
-                <li><a href="">Blue</a></li>
-                <li><a href="">Yellow</a></li>
-                <li><a href="">Black</a></li>
-                <li><a href="">White</a></li>
-                <li><a href="">Pink</a></li>
-                <li><a href="">Purple</a></li>
-            </ul>
-
-            <ul class="subMenuTechStacks">
-                <li><a href="">MERN</a></li>
-                <li><a href="">MEAN</a></li>
-                <li><a href="">MEVN</a></li>
-                <li><a href="">LAMP</a></li>
-                <li><a href="">WAMP</a></li>
-                <li><a href="">WISA</a></li>
-                <li><a href="">JAM</a></li>
-                <li><a href="">JAMStack</a></li>
-            </ul>
-
-
         </nav>
     </header>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur ab eveniet, voluptatibus ea sit quis. Quos dolorum nobis nihil quo nesciunt corrupti cupiditate neque exercitationem possimus magni excepturi pariatur amet facere vero, expedita, laborum hic qui nam? Est, veritatis? Fugiat cupiditate non fugit magnam, architecto necessitatibus assumenda eos facilis voluptatem minima quam suscipit repellendus culpa, recusandae voluptates iste quis dolore quo. Reprehenderit voluptates hic, fugiat odio nam minima deleniti consequuntur veniam corporis, libero illum dolor unde pariatur? Earum aspernatur rerum error quia, quam accusantium minima velit rem eligendi delectus, quaerat doloribus. Mollitia eos repudiandae architecto accusamus nisi est aut placeat inventore odi et nobis cum sit illum veritatis aperiam! Nobis aspernatur harum error accusamus odio magnam itaque minus, officiis voluptas nam, modi ipsum excepturi ut inventore facilis suscipit, blanditiis at vitae beatae! Eligendi quasi eum eius tempora ducimus quas pariatur, sequi mod accusantium repellendus nam delectus animi quia? Unde quisquam, ullam fuga dicta reiciendis culpa doloribus laudantium. Minus perspiciatis ex ea, et porro accusantium, illum odit facere ratione sed alias ut quas. Repellat dolores facere, tempore fugit quibusdam soluta similique reiciendis. Totam, qui? Earum, iste eaque quia debitis amet optio voluptas reiciendis! Saepe corporis quidem, necessitatibus officia dolore veritatis hic fugit impedit, animi quod autem vel accusamus eligendi fugiat at nesciunt cumque nostrum blanditiis? Dicta ea aliquam, maxime quis obcaecati, suscipit incidunt voluptatem officia ipsum consequatur optio tempora eveniet, porro adipisci placeat vero. Error, deleniti praesentium enim aspernatur ratione repellat architecto quo temporibus molestias esse quam ullam dolor aperiam incidunt cum reiciendis alias! Quasi dicta amet qui veniam placeat velit voluptate eius fuga labore iure non pariatur, illum quam veritatis inventore ea facere asperiores eaque consequatur sed illo quos! Omnis quam mollitia maxime tempora nihil deserunt odit quod sint quia placeat. Natus autem, aperiam ea eum similique modi, iste recusandae, velit sed praesentium dignissimos quo soluta consectetur laborum cumque voluptatem assumenda? Cumque natus corrupti recusandae molestiae labore. Voluptate omnis natus aliquam facilis animi quisquam assumenda harum odio ab fugiat quod, beatae blanditiis neque saepe accusamus odit. A hic soluta sed ipsum expedita rem temporibus error nulla, harum unde eveniet dicta porro voluptatum consequuntur eius beatae similique repellat quo, recusandae dignissimos totam pariatur. Molestiae blanditiis facere debitis fugit, voluptates voluptatem, neque quasi sapiente accusamus molestias, sunt nihil maxime cum natus culpa illum nam rem tempora officiis. Odit nobis, culpa, quibusdam magni, dolor iste architecto soluta blanditiis debitis reiciendis obcaecati qui dolore ex? Ipsam dignissimos magnam omnis vitae reprehenderit vero? Voluptate qui aperiam vel suscipit voluptatum commodi molestiae illum illo vero autem ipsum alias, maxime enim, harum repellendus iste numquam esse eos? Maxime earum id quas, beatae unde doloremque natus quam adipisci tenetur soluta enim minus! Quidem reprehenderit corrupti recusandae velit alias unde dolorum dicta assumenda at ipsum similique sunt cupiditate aut distinctio obcaecati nobis, accusantium reiciendis neque. Obcaecati fuga dolorem voluptatibus in adipisci porro, velit consectetur ipsa non eveniet facere, cum voluptates itaque, repellat tempora officiis! Rem, soluta reiciendis ullam officiis, accusamus ipsa optio debitis blanditiis, alias voluptatem assumenda qui repellat mollitia sint voluptatibus incidunt. Deleniti at nihil, quisquam quae labore omnis dignissimos! Nesciunt ullam sit explicabo ea impedit eveniet at adipisci et iste nihil corporis, rem magnam quo repellendus blanditiis consequatur. Libero, autem? Sunt cupiditate doloribus voluptas iusto quo magni quis optio eaque necessitatibus quidem aut explicabo vitae recusandae temporibus error, commodi est odit adipisci nisi voluptatum. Iusto labore maxime in nobis sit rem mollitia, iure eos reiciendis architecto minus beatae! In architecto consequuntur cumque harum illum minus numquam voluptas tempora eum maiores recusandae ducimus nam iste sit iusto qui delectus, quam maxime, assumenda earum vel animi dolor ratione nobis. Reprehenderit, laudantium! Vel maiores veritatis voluptates repellat tempora provident nisi aperiam animi libero, aut et suscipit culpa alias quo, soluta dolor blanditiis nulla tenetur facere pariatur magnam distinctio deserunt excepturi magni. Deleniti debitis, ex numquam nihil perspiciatis in maiores magni? Consectetur voluptate, quis veniam quo amet voluptatem dolorum, eaque dolor eveniet quidem culpa ab nobis temporibus. Sapiente sint porro commodi non ratione quo corporis impedit eius sed deserunt earum dolores, ea fugiat asperiores voluptas vel id, laboriosam modi dolor saepe iure. Eaque explicabo libero modi optio eius mollitia quibusdam consequuntur consequatur cumque quos quia deleniti obcaecati aspernatur est blanditiis dolores quas esse ratione, ut voluptates? Hic sapiente eum distinctio perferendis labore libero laborum asperiores adipisci, dignissimos culpa pariatur ea veniam quaerat, eaque sit. In eligendi atque aliquam? Vitae libero deserunt aliquam?</p>
 </body>
 
 </html>
