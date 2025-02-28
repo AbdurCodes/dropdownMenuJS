@@ -1,0 +1,24 @@
+{
+  "name": "create_ddm",
+  "author": "Abdur Rehman",
+  "version": "1.1.1",
+  "description": "A reusable and accessible dropdown menu component",
+  "main": "createDD.js",
+  "style": "styles/dropdown.css",
+  "files": [
+    "createDD.js",
+    "styles/dropdown.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbdurCodes/dropdownMenuJS/blob/main/createDD.js"
+  },
+  "keywords": [
+    "dropdown",
+    "submenu"
+  ],
+  "license": "ISC"
+}

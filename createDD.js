@@ -1,3 +1,5 @@
+// import './styles/dropdown.css';
+
 function createDropdown(parentContainer, buttonText, items) {
 
     const dropdownContainer = document.createElement('div');
