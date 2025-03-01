@@ -32,3 +32,11 @@ import './styles/dropdown.css';
 2. If You Are Not Using a Bundler and you are directly using ES modules in the browser, you will need to include the <link> tag in your HTML file. This is because the browser does not natively support importing CSS files in JavaScript. All you need to do is add the following <link> tag to your HTML file:
 
 <link rel="stylesheet" href="node_modules/create-dropdown/styles/dropdown.css">
+
+
+###### Installing create_ddm GitHub Package
+You can install the package in other projects using:
+
+```bash
+npm install @abdurcodes/create_ddm
+```
