@@ -1,10 +1,10 @@
 {
-  "name": "@abdurcodes/create_ddm",
+  "name": "create_ddm",
   "author": "Abdur Rehman",
   "version": "1.1.2",
   "description": "A reusable and accessible dropdown menu component",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+     "registry": "https://registry.npmjs.org/"
   },
   "main": "createDD.js",
   "style": "styles/dropdown.css",
